@@ -1,9 +1,12 @@
 package com.example.ealezel.drawprimitives;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,25 +16,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void GoToRectangleScreen(View view)
+    {
+        Intent goRectangleIntent = new Intent(this, RectangleActivity.class);
+        startActivity(goRectangleIntent);
     }
+    public void GoToCircleScreen(View view)
+    {
+        Intent goCircleIntent = new Intent(this, Size.class);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        startActivity(goCircleIntent);
+    }
+    public void GoToLineScreen(View view)
+    {
+        Intent goLineIntent = new Intent(this, LineActivity.class);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        startActivity(goLineIntent);
+    }
+    public void GoToPictureScreen(View view)
+    {
+        Intent goPictureIntent = new Intent(this, PictureActivity.class);
 
-        return super.onOptionsItemSelected(item);
+        startActivity(goPictureIntent);
     }
 }

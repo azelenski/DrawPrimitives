@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.ealezel.drawprimitives.draw.DrawRectangle;
+import com.example.ealezel.drawprimitives.draw.DrawPic;
 
-public class RectangleActivity extends AppCompatActivity {
+public class PictureActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rectangle);
-        DrawRectangle drawRect = new DrawRectangle(this);
-        setContentView(drawRect);
+        setContentView(R.layout.activity_picture);
+        DrawPic drawPic = new DrawPic(this);
+        setContentView(drawPic);
     }
 }

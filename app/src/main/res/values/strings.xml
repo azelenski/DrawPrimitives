@@ -6,4 +6,6 @@
     <string name="title_activity_rectangle">RectangleActivity</string>
     <string name="title_activity_circle">CircleActivity</string>
     <string name="title_activity_line">LineActivity</string>
+    <string name="title_activity_picture">PictureActivity</string>
+    <string name="title_activity_size">Size</string>
 </resources>
